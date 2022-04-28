@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swinburne University of Technology</title>
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+</head>
+<body class="wrap">
+  <header>
+    <h1 id="logo">
+      HTML5 Basic Content Elements with CSS layout
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#">Heading and Paragraph</a></li>
+        <li><a href="#">Special Characters</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Tables</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Hyperlinks</a></li>
+      </ul>
+    </nav>  
+  </header>
+
+  <main>
+    <section id="one">
+      <div class="heading-desc">
+        <div>
+          <h2 class="teal">HTML5 Basic Elements</h2>
+          <br><br>
+          <h2 class="teal">Headings and Paragraphs </h2>
+          <p>Headings and paragraphs are BLOCK elements</p>
+          <h3>Headings</h3>
+          <p>There are 6 levels of heading. Headings are logical marked.<br/> Do not skip levels. If you want to change the size of a heading, don't change its level - change the CSS.</p>
+          <h3>Paragraphs</h3>
+          <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+        </div>
+      </div> <!-- /.heading-desc -->
+      <aside>
+        <div>
+          <p>HTML page without CCS styling looks a bit boring!!</p>
+		      <p>We will give this aside a border, margin, padding and background graphic with CSS. </p>
+		      <p>We will will also float it to the right and set its width &#9786;.</p>
+        </div>
+      </aside>
+    </section>
+    <!-- section -->
+    <section class="sc">
+      <div>
+        <h2 id="sc"  class="teal">Special Characters</h2>
+        <p>While HTML supports many named special characters like <span class="special">&#174; (#174)</span>, XML only supports 5 namely: <span class="special">&quot; &apos; &amp; &lt;</span>  and <span class="special">&gt;</span>.  So to keep you HTML compliant you need to use numbers for all the others.</p>
+      </div> 
+    </section>
+    <!-- SECTION - two -->
+    <section id="two">
+      <div class="lists">
+
+        <h2>Lists</h2>
+        <p>There are three types of lists: Unordered and Ordered lists, and Definition Lists</p>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>First bullet point</li>
+          <li>Second bullet point</li>
+          <li>Third bullet point</li>
+        </ul>
+
+          <h3>Ordered List</h3>
+          <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+          </ol>
+
+        <h3>Definition List</h3>
+        <dl>
+          <dt>First term (or name)</dt>
+            <dd>First description (or definition, or value)</dd>
+          <dt>Second term (or name)</dt>
+            <dd>second description (or definition, or value)</dd>
+        </dl> 
+        <p>Lists can also be nested inside each other</p>
+
+        <ol>
+          <li>First item</li>
+          <li>Second item
+            <ul>
+               <li>First sub-item</li>
+               <li>Second sub-item</li>
+               <li>Third sub-item</li>
+            </ul>
+          </li>
+          <li>Third item</li>
+        </ol>
+
+      </div>
+
+      <div class="tables">
+        <h2>Tables</h2>
+		    <table>
+        <caption>Table of Monthly Savings</caption>
+          <thead>
+            <tr>
+            <!-- the scope attribute assists non-visual user agents -->
+            <!-- rowspan and colspan allow multiple cells to be merged -->
+              <th rowspan="2" scope="col">Month</th>
+              <th colspan="3" scope="col">Savings</th>
+            </tr>
+            <tr>
+              <th scope="col">Salary</th>
+              <th scope="col">Interest</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">January</th>
+              <td>$60</td>
+              <td>$40</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <th scope="row">February</th>
+              <td>$40</td>
+              <td>$40</td>
+              <td>$80</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <th colspan="3" scope="row"> Grand Total</th>
+              <td>$180</td>
+            </tr>
+            </tfoot>
+			  </table>
+      </div>
+    </section>
+
+    <section id="section-links">
+      <div class="hyperlinks">
+        <h2  class="teal">Hyperlinks</h2>
+		    <p><a href="http://ilearn.swin.edu.au" title="This takes you to Blackboard"> This is a link to an external site Blackboard</a></p>
+		    <p>This is a link to the <a href="#list">List Section </a> of the Web page</p>
+		    <p>This is a link using <a href="mailto:someone@swin.edu.au"> email</a> rather than an http protocol</p> 
+      </div>
+
+      <div class="images">
+        <h2  class="teal">Images</h2>
+        <figure>
+          <figcaption>This thumbnail image is used as a hyperlink to a larger version of the image
+          </figcaption>
+          <a href="img/pexels-jozef-fehér-1633522.jpg">  <img src="img/pexels-jozef-fehér-1633522.jpg" alt="Photo of my cat" title="Filesize 222kb " /></a>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+		<p>COS10011/COS60004/COS60007 CWA</p>
+		<p>&#169; Swinburne University of Technology</p>
+		<p>Lab05 - Task 1</p>
+  </footer>  
+</body>
+</html>
